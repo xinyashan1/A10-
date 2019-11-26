@@ -1,0 +1,144 @@
+/*responsive web layout*/
+
+body {
+    background-color: #222;
+    margin: 0;
+    font-family: sans-serif;
+} 
+
+
+header {
+    height: 5em;
+    padding: 2em; 
+    
+}
+nav {
+    background-color: #19181b;
+}
+main {
+    
+}
+section {
+    padding: 1em 2em;
+}
+aside {
+    
+}
+
+article {
+    
+}
+.photoBox {
+    display: flex;
+    flex-wrap: wrap;
+}
+.photoColumn {
+    flex: 50%;
+    padding: 1% .5%;
+}
+.photoColumn img {
+    width: 100%;
+}
+footer {
+    height: 3em;
+    background-color: #274f69;
+    color: cornsilk;
+    clear: left;
+}
+div {
+    box-sizing: border-box;
+}
+/* ------- Mobile Phone ------- */
+@media only screen and (max-width: 600px){
+    main {
+        width: 100%;
+        background-color: rgb(245, 212, 212);
+    }
+       .specials {
+        width: 100%;
+    
+    }
+    .mainContent {
+        width: 100%;
+    }
+    .navBar {
+        
+    }
+    .navBar a, .navBar a:link, .navBar a:visited {
+        display: block;
+        text-align: center;
+        line-height: 2.5em;
+        color: rgb(221, 187, 217);
+        text-decoration: none;
+        border-bottom: 1px solid rgb(134, 106, 131); 
+    }
+    .navBar a:hover {
+        background-color: #8b6d9c;
+        color: rgb(200, 213, 236);
+    }
+    .photoColumn {
+        flex: 100%;
+    }
+}
+/* ------- End of Mobile Phone ------- */
+/* ------- Tablet and IPad ------- */
+@media only screen and (min-width: 601px){
+    main {
+        width: 90%;
+        margin: 0 auto;
+        background-color: #eff789;
+    }
+       .specials {
+        width: 20%;
+        float: left;
+    
+    }
+    .mainContent {
+        width: 80%;
+        float: left;
+    }
+    .navBar {
+        overflow: hidden;
+        padding: 0 10%;
+    }
+    .navBar a, .navBar a:link, .navBar a:visited {
+        display: block;
+        width: 25%;
+        float: left;
+        text-align: center;
+        line-height: 2em;
+        color: rgb(238, 182, 226);
+        text-decoration: none; 
+    }
+    .navBar a:hover {
+        background-color: #7c2280;
+        color: rgb(178, 225, 252);
+    }
+    .photoColumn {
+        width: 50%;
+    }
+}
+/* ------- End of Tablet and IPad ------- */
+/* ------- Desktop ------- */
+@media only screen and (min-width: 1000px){
+    main {
+        width: 80%;
+        max-width: 1400px;
+        margin: 0 auto;
+        background-color: #e3b4f1;
+    }
+    .specials {
+        width: 30%;
+        float: left;
+    
+    }
+    .mainContent {
+        width: 70%;
+        float: left;
+    }
+    .photoColumn {
+        flex: 50%;
+    }
+    
+}
+/* ------- End of Desktop ------- */
