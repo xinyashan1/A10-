@@ -1,2 +1,1 @@
-# A10-
-Web Dev 114 -Responsive mobile 
+A unique project I have compiled together to make it resposnive. 
